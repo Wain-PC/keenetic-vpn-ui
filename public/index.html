@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keenetic VPN Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Keenetic VPN Manager</h1>
+    <div class="header-actions">
+      <input id="filter-input" type="text" placeholder="Filter by name or MAC…" autocomplete="off">
+      <label class="online-filter" title="Show only online devices">
+        <input id="online-only" type="checkbox">
+        <span>Online</span>
+      </label>
+      <button id="refresh-btn" title="Refresh device list">&#x21bb;</button>
+    </div>
+  </header>
+
+  <main id="device-list">
+    <div class="loading">Loading devices&hellip;</div>
+  </main>
+
+  <div id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
